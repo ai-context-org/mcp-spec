@@ -1,0 +1,13 @@
+mcp_version: "1.0"
+name: example
+description: Example MCP-compatible module
+auth:
+  type: oauth2
+  scopes:
+    - https://www.googleapis.com/auth/calendar.readonly
+endpoints:
+  - path: /mcp/context
+    method: POST
+    returns: List[ContextDocument]
+    required_parameters: [user_id]
+    rate_limit: 1000/hour
