@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ContextRequest",
+  "type": "object",
+  "properties": {
+    "request_id": { "type": "string" },
+    "parameters": { "type": "object" },
+    "user_id": { "type": ["string", "null"] },
+    "time": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "required": ["request_id"]
+}
